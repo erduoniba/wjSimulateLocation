@@ -36,6 +36,12 @@
     [self setupUI];
     [self setupLocationManager];
     [self updateCurrentLocationDisplay];
+    
+    // 监听模拟位置更新通知
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(simulatedLocationDidUpdate:) 
+                                                 name:@"SimulatedLocationDidUpdate" 
+                                               object:nil];
 }
 
 - (void)setupUI {
@@ -199,10 +205,12 @@
         longitude = iosLocation.longitude;
     }
     
+    // 更新位置（已包含系统级更新）
     [[LocationSimulationManager sharedManager] updateSimulatedLocationWithLatitude:latitude longitude:longitude];
     
-    [self updateCurrentLocationDisplay];
-    [self centerMapOnLocation:CLLocationCoordinate2DMake(latitude, longitude)];
+    // 不需要手动调用，通知会自动触发更新
+    // [self updateCurrentLocationDisplay];
+    // [self centerMapOnLocation:CLLocationCoordinate2DMake(latitude, longitude)];
     
     [self showAlert:@"位置已更新"];
 }
@@ -304,9 +312,22 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     [self updateCurrentLocationDisplay];
-    if (locations.firstObject) {
+    // 仅在非模拟模式下更新地图中心
+    if (![LocationSimulationManager sharedManager].simulationEnabled && locations.firstObject) {
         [self centerMapOnLocation:locations.firstObject.coordinate];
     }
+}
+
+- (void)simulatedLocationDidUpdate:(NSNotification *)notification {
+    CLLocation *location = notification.userInfo[@"location"];
+    if (location) {
+        [self updateCurrentLocationDisplay];
+        [self centerMapOnLocation:location.coordinate];
+    }
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
