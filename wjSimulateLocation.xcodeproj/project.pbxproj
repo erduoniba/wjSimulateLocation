@@ -14,6 +14,12 @@
 		9BCEDD241EA39A7400608DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCEDD231EA39A7400608DAE /* Assets.xcassets */; };
 		9BCEDD271EA39A7400608DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCEDD251EA39A7400608DAE /* LaunchScreen.storyboard */; };
 		9BCEDD301EA39AE000608DAE /* wjLocationTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEDD2F1EA39AE000608DAE /* wjLocationTransform.m */; };
+		D99136CC2E5B6AA700FD4D2B /* GPXGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D99136C92E5B6AA700FD4D2B /* GPXGenerator.m */; };
+		D99136CD2E5B6AA700FD4D2B /* Route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D99136CA2E5B6AA700FD4D2B /* Route.gpx */; };
+		D99136CE2E5B6AA700FD4D2B /* Shanghai.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D99136CB2E5B6AA700FD4D2B /* Shanghai.gpx */; };
+		D99136CF2E5B6AA700FD4D2B /* Beijing.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D99136C72E5B6AA700FD4D2B /* Beijing.gpx */; };
+		D99136D42E5B6CCB00FD4D2B /* LocationSimulationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D99136D32E5B6CCB00FD4D2B /* LocationSimulationManager.m */; };
+		D99136D52E5B6CCB00FD4D2B /* LocationControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D99136D12E5B6CCB00FD4D2B /* LocationControlViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,15 @@
 		9BCEDD2E1EA39AE000608DAE /* wjLocationTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjLocationTransform.h; sourceTree = "<group>"; };
 		9BCEDD2F1EA39AE000608DAE /* wjLocationTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjLocationTransform.m; sourceTree = "<group>"; };
 		9BCEDD311EA39BE700608DAE /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		D99136C72E5B6AA700FD4D2B /* Beijing.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Beijing.gpx; sourceTree = "<group>"; };
+		D99136C82E5B6AA700FD4D2B /* GPXGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXGenerator.h; sourceTree = "<group>"; };
+		D99136C92E5B6AA700FD4D2B /* GPXGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXGenerator.m; sourceTree = "<group>"; };
+		D99136CA2E5B6AA700FD4D2B /* Route.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Route.gpx; sourceTree = "<group>"; };
+		D99136CB2E5B6AA700FD4D2B /* Shanghai.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Shanghai.gpx; sourceTree = "<group>"; };
+		D99136D02E5B6CCB00FD4D2B /* LocationControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationControlViewController.h; sourceTree = "<group>"; };
+		D99136D12E5B6CCB00FD4D2B /* LocationControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationControlViewController.m; sourceTree = "<group>"; };
+		D99136D22E5B6CCB00FD4D2B /* LocationSimulationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationSimulationManager.h; sourceTree = "<group>"; };
+		D99136D32E5B6CCB00FD4D2B /* LocationSimulationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationSimulationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +78,18 @@
 			isa = PBXGroup;
 			children = (
 				9BCEDD1A1EA39A7400608DAE /* AppDelegate.h */,
+				D99136C72E5B6AA700FD4D2B /* Beijing.gpx */,
+				D99136C82E5B6AA700FD4D2B /* GPXGenerator.h */,
+				D99136C92E5B6AA700FD4D2B /* GPXGenerator.m */,
+				D99136CA2E5B6AA700FD4D2B /* Route.gpx */,
+				D99136CB2E5B6AA700FD4D2B /* Shanghai.gpx */,
 				9BCEDD1B1EA39A7400608DAE /* AppDelegate.m */,
 				9BCEDD1D1EA39A7400608DAE /* ViewController.h */,
 				9BCEDD1E1EA39A7400608DAE /* ViewController.m */,
+				D99136D02E5B6CCB00FD4D2B /* LocationControlViewController.h */,
+				D99136D12E5B6CCB00FD4D2B /* LocationControlViewController.m */,
+				D99136D22E5B6CCB00FD4D2B /* LocationSimulationManager.h */,
+				D99136D32E5B6CCB00FD4D2B /* LocationSimulationManager.m */,
 				9BCEDD311EA39BE700608DAE /* Location.gpx */,
 				9BCEDD2E1EA39AE000608DAE /* wjLocationTransform.h */,
 				9BCEDD2F1EA39AE000608DAE /* wjLocationTransform.m */,
@@ -117,8 +141,8 @@
 				TargetAttributes = {
 					9BCEDD131EA39A7400608DAE = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 6UK4NFK9JE;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = TKRM4J3XJV;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -127,6 +151,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -146,6 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BCEDD271EA39A7400608DAE /* LaunchScreen.storyboard in Resources */,
+				D99136CD2E5B6AA700FD4D2B /* Route.gpx in Resources */,
+				D99136CE2E5B6AA700FD4D2B /* Shanghai.gpx in Resources */,
+				D99136CF2E5B6AA700FD4D2B /* Beijing.gpx in Resources */,
 				9BCEDD241EA39A7400608DAE /* Assets.xcassets in Resources */,
 				9BCEDD221EA39A7400608DAE /* Main.storyboard in Resources */,
 			);
@@ -158,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99136CC2E5B6AA700FD4D2B /* GPXGenerator.m in Sources */,
 				9BCEDD1F1EA39A7400608DAE /* ViewController.m in Sources */,
 				9BCEDD1C1EA39A7400608DAE /* AppDelegate.m in Sources */,
 				9BCEDD301EA39AE000608DAE /* wjLocationTransform.m in Sources */,
+				D99136D42E5B6CCB00FD4D2B /* LocationSimulationManager.m in Sources */,
+				D99136D52E5B6CCB00FD4D2B /* LocationControlViewController.m in Sources */,
 				9BCEDD191EA39A7400608DAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +312,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6UK4NFK9JE;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TKRM4J3XJV;
 				INFOPLIST_FILE = wjSimulateLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.wj.wjSimulateLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = JDLTDev_10_12;
 			};
 			name = Debug;
 		};
@@ -293,11 +328,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6UK4NFK9JE;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TKRM4J3XJV;
 				INFOPLIST_FILE = wjSimulateLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.wj.wjSimulateLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = JDLTDev_10_12;
 			};
 			name = Release;
 		};
@@ -320,6 +359,7 @@
 				9BCEDD2D1EA39A7400608DAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

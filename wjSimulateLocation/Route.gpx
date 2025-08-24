@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+    <!-- 模拟移动路线 -->
+    <wpt lat="39.904200" lon="116.407396">
+        <name>起点：天安门</name>
+        <time>2014-09-24T14:00:00Z</time>
+    </wpt>
+    
+    <wpt lat="39.908743" lon="116.397487">
+        <name>故宫博物院</name>
+        <time>2014-09-24T14:05:00Z</time>
+    </wpt>
+    
+    <wpt lat="39.915119" lon="116.403963">
+        <name>景山公园</name>
+        <time>2014-09-24T14:10:00Z</time>
+    </wpt>
+    
+    <wpt lat="39.924090" lon="116.394264">
+        <name>北海公园</name>
+        <time>2014-09-24T14:15:00Z</time>
+    </wpt>
+    
+    <wpt lat="39.933153" lon="116.395817">
+        <name>什刹海</name>
+        <time>2014-09-24T14:20:00Z</time>
+    </wpt>
+</gpx>
